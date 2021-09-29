@@ -1,16 +1,17 @@
-h1, h2 {
+h1, h2, p {
     font-family: 'Rubik Beastly', cursive;
 }
 
 main {
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
 .animals {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     cursor: pointer;
 }
 

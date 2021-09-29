@@ -1,15 +1,39 @@
-// import functions and grab DOM elements
+// images
 const horseImg = document.getElementById('horse'); 
+const dogImg = document.getElementById('dog');
+const catImg = document.getElementById('cat')
+
+// sounds
 const horseSound = document.getElementById('horse-sound')
+const dogSound = document.getElementById('dog-sound');
+const catSound = document.getElementById('cat-sound');
 
-// initialize global state
-
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+// sounds with clicks
 
   horseImg.addEventListener('click', ()=>{
-    console.log('clicking the horse!');
     horseSound.play();
   });
+
+  dogImg.addEventListener('click', ()=>{
+    dogSound.play();
+  });
+
+  catImg.addEventListener('click', ()=>{
+    catSound.play();
+  });
+
+  // sounds with keys
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'd') {
+      dogSound.play();
+    }});
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'h') {
+      horseSound.play();
+    }});
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'c') {
+      catSound.play();
+    }});
