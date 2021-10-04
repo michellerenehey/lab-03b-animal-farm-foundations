@@ -22,18 +22,14 @@ const catSound = document.getElementById('cat-sound');
     catSound.play();
   });
 
-  // sounds with keys
+// sounds with keys
+  
   document.addEventListener('keydown', function (event) {
-    if (event.key === 'd') {
-      dogSound.play();
-    }});
+      if (event.key === 'd') {
+        dogSound.play();
+      } else if (event.key === 'h') {
+        horseSound.play();
+      } else if (event.key === 'c') {
+        catSound.play();
+      }});
 
-  document.addEventListener('keydown', function (event) {
-    if (event.key === 'h') {
-      horseSound.play();
-    }});
-
-  document.addEventListener('keydown', function (event) {
-    if (event.key === 'c') {
-      catSound.play();
-    }});
